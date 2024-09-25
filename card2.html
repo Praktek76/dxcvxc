@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/FontAwesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/solid.min.css" />
+    <style>
+      body {
+        padding: 35px;
+      }
+
+      .button2 {
+        background-color: rgb(255, 0, 0);
+      }
+
+      .card-container {
+        width: 250px;
+        padding: 5px;
+      }
+
+      .card-container:hover {
+        outline: 1px solid gray;
+        cursor: pointer;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      }
+
+      .text {
+        color: white;
+      }
+
+      .gambar-orang {
+        width: 250px;
+        height: auto;
+      }
+
+      .gambar-produk {
+        width: 100%;
+        height: auto;
+      }
+
+      .nama-produk {
+        font-size: larger;
+        display: block;
+        margin: 4px 0px;
+      }
+      .harga {
+        font-weight: bold;
+        margin: 4px 0px;
+      }
+
+      .rating {
+        color: gray;
+        margin: 4px 6px;
+      }
+
+      .rated {
+        color: rgb(255, 0, 0);
+      }
+
+      .button {
+        padding: 4px 6px;
+        cursor: pointer;
+      }
+      .icon-button-text {
+        margin-right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="card-container"
+      style="
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+        width: 500px;
+        height: auto;
+      "
+    >
+      <img
+        src="assets/protait.webp"
+        class="gambar-produk"
+        style="border-radius: 100%"
+      />
+      <h2 style="font-size: x-large" class="text">Name: SUREN MULYO</h2>
+      <div style="margin-right: auto">
+        <button class="button2">
+          <i class="fa-solid fa-user-plus">Follow</i>
+        </button>
+        <button style="margin-left: 3px" class="button2">
+          <i class="fa-solid fa-comment-dots">comment</i>
+        </button>
+        <button style="margin-left: auto" class="button2">
+          <i class="fa-solid fa-share">Share</i>
+        </button>
+      </div> 
+      <div style="display: flex">
+        <div style="width: 50%; text-align: center">
+          <div><h1 class="text">12.6K</h1></div>
+          <div style="font-style: italic; opacity: 80%">
+            <h5 class="text">Followers</h5>
+          </div>
+        </div>
+        <div style="width: 50%; text-align: center">
+          <div><h1 class="text">85</h1></div>
+          <div style="font-style: italic; opacity: 80%">
+            <h5 class="text">Followings</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML</title>
+
+    <!-- meta: adalah infromasi tambahan pad web page tersebut -->
+    <meta name="description" content="belajar bahasa pemrograman HTML" />
+    <meta name="keywords" content="belajar web, html, html beginner" />
+    <meta name="author" content="indra cahya" />
+
+    <!-- icon page: png svg gif -->
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
+
+    <!-- link -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="import" href="component.html"> -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <!-- <link rel="stylesheet" href="print.css" media="print"> -->
+
+    <!-- style CSS: inline, internal, external -->
+    <style>
+      .warna-primary {
+        color: brown;
+      }
+
+      /* css table */
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- element HTML 👇 -->
+
+    <!-- heading: h1 ... h6 -->
+    <h1 id="judul-utama">Haiii</h1>
+    <h2>ini h2</h2>
+    <h3 class="warna-primary">hello</h3>
+    <h4>hay</h4>
+    <h5 class="warna-primary">hola</h5>
+    <h6>hei</h6>
+    <h2 style="color: brown; font-weight: bold">hei</h2>
+
+    <!-- paragraph -->
+    <p>
+      Mangga adalah nama sejenis buah, demikian pula nama pohonnya. Mangga
+      termasuk ke dalam genus Mangifera, yang terdiri dari 35-40 anggota dari
+      famili Anacardiaceae.
+    </p>
+
+    <!-- text formatting: b, strong, i, em, mark, small, del, ins, sub, sup -->
+    <p style="font-size: x-large">
+      Kota <b>Surabaya</b>, pengucapan <strong>bahasa Jawa</strong> adalah ibu
+      kota <i>Provinsi</i> Jawa Timur yang <b>menjadi</b> pusat
+      <em>pemerintahan</em> dan <mark>perekonomian</mark> dari Provinsi
+      <small>Jawa Timur</small> sekaligus kota terbesar di
+      <del>provinsi</del> tersebut. <ins>Surabaya</ins> juga merupakan sebuah
+      kota yang terletak di <sub>Provinsi</sub> Jawa Timur, <sup>Indonesia</sup>
+    </p>
+
+    <!-- Quotations: <blockquote>,<q>, <abbr>, <address>, <cite>, <bdo> -->
+    <span>blockquote</span>
+    <blockquote>
+      Lorem, ipsum dolor sit amet consectetur <cite>adipisicing</cite> elit.
+      <bdo dir="rtl">Doloremque</bdo> alias eos eius incidunt nemo dolorem
+      consequatur totam officia quaerat? Nihil doloribus debitis
+      <abbr title="">incidunt</abbr> consectetur eos quis
+      <q>nemo cupiditate</q>
+      accusamus.
+    </blockquote>
+
+    <address>
+      jl joyoboyo 19 medaeng waru sidoarjo kode kreatif digital 0851 5513 2241
+    </address>
+    <br />
+
+    <!-- COLORS -->
+    <span style="background-color: antiquewhite">Background Color</span><br />
+    <span style="color: blueviolet">Text Color</span><br />
+    <!-- border: line-width || line-style || color -->
+    <span style="border: 1px solid brown">Border Color</span><br />
+    <!-- COLOR VALUE -->
+    <span style="color: chocolate; font-weight: bold">NAMES</span><br />
+    <span style="color: rgb(106, 90, 205)">RGB</span><br />
+    <!-- rgba (r,g,b, transparancy 0-1) -->
+    <span style="color: rgba(52, 55, 235, 1); font-weight: bold">RGBA</span>
+    <br />
+    <span style="color: #144696">HEX</span><br />
+    <span style="color: hsl(248, 53%, 58%)">HSL</span><br />
+    <!-- HSLA -->
+    <span style="color: hsla(248, 53%, 58%, 1)">HSLA</span><br /><br />
+
+    <!-- links: replace, new page, bookmark -->
+    <a href="myprofile.html">Tentang Saya</a> <br />
+    <a href="http://youtube.com" target="_blank">Youtube</a> <br />
+    <a href="#judul-utama"> Bookmark</a> <br />
+
+    <!-- image: jpeg gif ico png svg -->
+    <img src="assets/soto.jpg" alt="" srcset="" width="250" height="auto" />
+    <img
+      src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+      alt="description"
+      width="250"
+      height="auto"
+    />
+    <br /><br />
+
+    <!-- table: kolom, baris, header, cell, head body foot, caption  -->
+    <!-- table setting: border, size, header, padding spacing, colspan rowspan, styling  -->
+    <!-- TABLE: border, size, header, padding spacing, colspan rowspan, styling, colgroup-->
+    <table>
+      <caption style="caption-side: bottom; margin-top: 10px">
+        ini adalah caption tabel
+      </caption>
+      <thead>
+        <tr
+          style="height: 50px; text-align: center; background-color: cornsilk"
+        >
+          <!-- th = nama kolom -->
+          <th>No</th>
+          <th>Nama</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Risa</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Budi</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+
+    <!-- Tabel Horizontal -->
+    <table>
+      <colgroup>
+        <col span="1" style="background-color: cadetblue" />
+        <col span="2" style="background-color: honeydew" />
+      </colgroup>
+      <tr>
+        <th style="width: 100px">Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+
+    <br />
+    <!-- border-spacing -->
+    <table style="border-spacing: 10px; border-collapse: unset !important">
+      <tr>
+        <th style="width: 100px">Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- colspan/ penggabungan kolom -->
+    <table style="width: 70%">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+
+    <br />
+    <!-- rowspan/ penggabungan baris -->
+    <table style="width: 70%">
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- LIST -->
+    <ul style="list-style-type: circle">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <ul style="list-style-type: square">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <ol type="a">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <br />
+
+    <!-- iFRAME -->
+    <!-- iframe untuk menampilkan halaman lain -->
+    <iframe
+      src="myprofile.html"
+      height="200"
+      width="300"
+      title="Iframe Example"
+    ></iframe>
+    <br />
+    <!-- iframe untuk menyematkan video youtube -->
+    <iframe
+      width="350"
+      height="200"
+      src="https://www.youtube.com/embed/hV5rsTzhnQw?si=xxQFNGFw56rUXOQq"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <!-- iframe untuk menyematkan Google Maps -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.7385601125447!2d112.7730344769635!3d-7.383168272680091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5d079a58273%3A0x5585cbe67c658cb2!2sBandar%20Udara%20Internasional%20Juanda%20-%20Terminal%202%20(Penerbangan%20Internasional)!5e0!3m2!1sid!2sid!4v1706361352916!5m2!1sid!2sid"
+      width="400"
+      height="250"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- SYMBOL, EMOJI -->
+    <br /><br />
+    <span>symbol: &#8709; &#169;</span> <br />
+    <span>emoji: 🥺😁 &#128514; &#x1F600; &#x1F923;</span>
+
+    <!-- FORM  -->
+    <form id="form" style="margin-top: 50px">
+      <h2>Latihan HTML Form</h2>
+      <!-- inputan -->
+      <label>Nama Lengkap</label>
+      <input
+        type="text"
+        name="nama"
+        value=""
+        placeholder="harus lengkap yaa"
+      /><br />
+      <label>No.Hp</label>
+      <input type="number" name="phone" value="" /><br />
+      <label>Password</label>
+      <input type="password" name="" value="" /><br />
+      <label>Email</label>
+      <input type="email" name="" value="" /><br />
+      <label>Tanggal Lahir</label>
+      <input type="date" name="" value="" /><input
+        type="time"
+        name=""
+        value=""
+      /><br />
+      <label>Lampiran</label>
+      <input type="file" name="" value="" /><br />
+      <label>Bhs Inggris</label>
+      <input type="range" name="" value="" /><br />
+
+      <!-- pilihan warna (pilih salah satu) -->
+      <div>
+        <span>Pilihan Warna</span><br />
+        <input type="radio" name="warna" value="merah" />
+        <label for="">merah</label><br />
+        <input type="radio" name="warna" value="kuning" />
+        <label for="">kuning</label><br />
+        <input type="radio" name="warna" value="hijau" />
+        <label for="">hijau</label>
+      </div>
+
+      <br />
+
+      <!-- pilihan produk (pilih lebih dari 1) -->
+      <div>
+        <span>Pilihan Produk</span><br />
+        <input type="checkbox" name="produk" value="A" />
+        <label for="">Paket A (ayam + nasi + ...)</label><br />
+
+        <input type="checkbox" name="produk" value="B" />
+        <label for="">Paket B</label><br />
+
+        <input type="checkbox" name="produk" value="C" />
+        <label for="">Paket C</label><br />
+      </div>
+
+      <br />
+      <!-- pilihan salah satu -->
+      <label for="">Kurir Pengiriman</label><br />
+      <select name="kurir">
+        <option value="">-</option>
+        <option value="jne">jne</option>
+        <option value="jnt">jnt</option>
+      </select>
+      <br />
+
+      <!-- isian banyak text -->
+      <br />
+      <label>Tentang Saya</label><br />
+      <textarea
+        placeholder="deskripsikan tentang alasan anda membeli produk kami"
+        name="deskripsi"
+        rows="5"
+        style="width: 500px"
+      ></textarea>
+
+      <div>
+        <button type="button" onclick="klik()">Klik</button>
+        <button type="reset" onclick="mereset()">reset</button>
+        <button type="submit">kirim</button>
+      </div>
+    </form>
+
+    <!-- SVG : CIRCLE, RECT, POLYGON -->
+    <!-- CIRCLE -->
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="yellow"
+      />
+    </svg>
+    <!-- RECTANGLE -->
+    <svg width="400" height="100">
+      <rect
+        width="400"
+        height="100"
+        style="fill: rgb(0, 0, 255); stroke-width: 10; stroke: rgb(0, 0, 0)"
+      />
+    </svg>
+    <!-- ROUND RECTANGLE -->
+    <svg width="400" height="180">
+      <rect
+        x="50"
+        y="20"
+        rx="20"
+        ry="20"
+        width="150"
+        height="150"
+        style="fill: red; stroke: black; stroke-width: 5; opacity: 0.5"
+      />
+    </svg>
+    <!-- STAR -->
+    <svg width="200" height="200">
+      <polygon
+        points="100,10 40,198 190,78 10,78 160,198"
+        style="fill: lime; stroke: purple; stroke-width: 5; fill-rule: evenodd"
+      />
+    </svg>
+    <br />
+
+    <!-- MEDIA: VIDEO, AUDIO -->
+    <video src="assets/PcBuild.mp4" width="600px" controls></video><br />
+    <!-- AUDIO: mp3, ogg, wav-->
+    <audio controls autoplay>
+      <source src="x.mp3" type="audio/mpeg" />
+      <!-- <source src="x.mp3" type="audio/mpeg" /> --></audio
+    ><br />
+
+    <!-- computer Code: code, kbd, samp -->
+    <br />
+    <span>programming code</span>
+    <code> x = 5; y = 6; z = x + y; </code>
+
+    <!-- javascript -->
+  </body>
+</html>

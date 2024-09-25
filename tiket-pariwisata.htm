@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .table {
+        background-color: rgb(212, 212, 212);
+        border: 1px solid;
+        border-radius: 10px;
+        width: 600px;
+      }
+      .input {
+        width: 500px;
+        padding: 5px;
+        margin: 3px;
+        border-radius: 5px;
+        border: none;
+      }
+      .input:hover,
+      .input:focus {
+        outline: cornflowerblue solid 2px;
+      }
+      .text{
+        padding-left: 20px;
+        font-style: oblique;
+      }
+      body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+      <form style="margin: 20px" action="">
+        <div style="display: flex;">
+          <div class="table">
+            <div style="padding: 20px">
+              <label for="">Nama:</label>
+              <span><input type="text" class="input" name="Nama"></span>
+            </div>
+            <div style="padding: 20px;">
+              <label for="">Destinasi:</label>
+              <span><select class="input" name="Destinasi">
+                  <option>bandung</option>
+                  <option>jogja</option>
+                  <option>solo</option>
+                  <option>jombang</option>
+                  <option>jakarata</option>
+                </select></span>
+            </div>
+            <div style="padding: 20px;">
+              <span>Status:</span><br>
+              <span><select class="input" name="Status">
+                  <option>dewasa</option>
+                  <option>anak-anak</option>
+                </select></span>
+            </div>
+            <div style="padding: 20px;">
+              <span>Jumlah Tiket:</span><br>
+              <span><input type="number" class="input" name="JumlahTiket"></span>
+            </div>
+            <div style="padding: 20px">
+              <span>Diskon:</span><br>
+              <span><select class="input" name="Diskon">
+                  <option value="0">0%</option>
+                  <option value="0.15">15%</option>
+                  <option value="0.17">17%</option>
+                  <option value="0.19">19%</option>
+                  <option value="0.27">27%</option>
+                  <option value="0.60">60%</option>
+                </select></span>
+            </div>
+            <div style="padding: 20px">
+              <span>Total:</span><br>
+              <span><input disabled type="number" class="input" name="Total"></span>
+            </div>
+            <button style="margin: 20px" type="button" onclick="getValueForm()">Beli</button>
+            <h3 class="text">*dewasa dan anak-anak dikenakkan 100rb$</h3>
+            <div style="margin: 20px">
+              <h4>Pesanan⬇️⬇️⬇️⬇️⬇️</h4>
+              <span>Nama: </span><span id="Nama-value"></span><br>
+              <span>Destinasi: </span><span id="Destinasi-value"></span><br>
+              <span>Status: </span><span id="Status-value"></span><br>
+              <span>JumlahTiket: </span><span id="JumlahTiket-value"></span><br>
+              <span>Diskon: </span><span id="Diskon-value"></span><br>
+              <span>Total: </span><span id="Total-value"></span><br>
+            </div>
+        </div>
+        <!-- <div>
+          <label for="">username</label>
+          <input type="text" name="username" />
+        </div>
+        <div>
+          <label for="">password</label>
+          <input type="password" name="password" />
+        </div> -->
+      </form>
+ 
+    <script>
+      function getValueForm() {
+        let Nama = document.getElementsByName('Nama')[0].value;
+        let Destinasi = document.getElementsByName('Destinasi')[0].value;
+        let Status = document.getElementsByName('Status')[0].value;
+        let JumlahTiket = document.getElementsByName('JumlahTiket')[0].value;
+        let Diskon = document.getElementsByName('Diskon')[0].value;
+        let Total = 100000 * JumlahTiket - (100000 * JumlahTiket * Diskon);
+
+        document.getElementById('Nama-value').innerHTML = Nama;
+        document.getElementById('Destinasi-value').innerHTML = Destinasi;
+        document.getElementById('Status-value').innerHTML = Status;
+        document.getElementById('JumlahTiket-value').innerHTML = JumlahTiket;
+        document.getElementById('Diskon-value').innerHTML = Diskon;
+        document.getElementById('Total-value').innerHTML = Total;
+        document.getElementsByName('Total')[0].value = Total;
+      }
+
+
+    </script>
+  </body>
+</html>

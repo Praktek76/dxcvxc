@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/FontAwesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/solid.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/brands.min.css" />
+    <link rel="stylesheet" href="asset/splide/dist/css/splide.min.css" />
+    <style>
+      @media screen and (min-width: 1024px) {
+        .img-responsive {
+          width: 50%;
+        }
+        .grid-responsive {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 10px;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(255, 0, 0),
+          rgb(0, 0, 255)
+        );
+        padding: 10px;
+      }
+
+      .grid-item-img {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .gradient-color {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(255, 0, 0),
+          rgb(0, 0, 255)
+        );
+      }
+
+      .gradient-color2 {
+        background: linear-gradient(to bottom, #ff0000 0%, rgb(0, 0, 255) 100%);
+      }
+
+      .CImg-W100 {
+        width: 100%;
+        height: auto;
+      }
+
+      .CImg-H100 {
+        width: auto;
+        height: 100%;
+      }
+
+      .splide {
+        padding: 0 50px;
+      }
+
+      .my-slider-progress {
+        background: #ccc;
+      }
+
+      .my-slider-progress-bar {
+        background: greenyellow;
+        height: 2px;
+        transition: width 400ms ease;
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="splide splide-basic gradient-color2"
+      aria-label="Splide Basic HTML Example"
+      style="border: 5px solid"
+    >
+      <h2>HeadSet</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li style="display: flex" class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/headset/027582900_1557992798-rocky_mark-kaser_custom-5365788f63db5c176e05995ae1f38c40459e6380-s800-c85.webp"
+            />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/headset/45527_L_1.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/headset/51937_L_1.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/headset/71rwPzXKDGL._AC_UF894,1000_QL80_.jpg"
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/headset/Free-Shipping-Stereo-Headphone-G9000-Max-PS4-Gamer-Headset-Gaming-Vr-Headsets-Pink-Computer-Headphones-with-Mic-for-PS5-PC-xBox.webp"
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/headset/Jete-Headset-Gaming-GA5-2.jpg"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <div
+      style="
+        display: flexbox;
+        border: 5px solid;
+        padding: 7px;
+        border-radius: 10px;
+        display: block;
+      "
+    >
+      <center><h1>Peralatan Laptop Aneh.</h1></center>
+      <div style="display: flex">
+        <img
+          src="assets/mmmooousse/643c7ce8-a144-4ee2-b839-4907ef7877f1.jpg"
+          style="border: 1px solid; border-radius: 5px"
+        />
+        <div>
+          <h1>Mouse Vertical.</h1>
+          <p style="font-style: italic; font-size: larger">
+            Menggunakan tetikus vertikal berarti Anda tidak perlu lagi
+            terus-menerus menggerakkan lengan atau tangan Anda. Anda tidak perlu
+            menjangkau ke depan atau ke samping untuk menggerakkan tetikus atau
+            kursor.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div>
+          <h1>Keyboard Maltron.</h1>
+          <p style="font-style: italic; font-size: larger">
+            Keyboard Maltron merupakan keyboard yang memiliki tampilan unik,
+            karena pada beberapa bagian keyboard menjorok ke dalam. Tujuan dari
+            bentuk keyboard maltron agar memudahkan jari-jari saat akan
+            diposisikan untuk mengetik.
+          </p>
+        </div>
+        <img
+          src="assets/mmmooousse/Picture4.jpg"
+          style="
+            border: 1px solid;
+            border-radius: 5px;
+            width: auto;
+            height: 400px;
+          "
+        />
+      </div>
+      <div style="display: block;" class="grid-responsive grid-container">
+        <div class="grid-item-img">
+          <img style="width: 200px" src="assets/mmmooousse/qwerty.png" alt="" />
+          <p style="font-style: italic;">
+            QWERTY adalah salah satu jenis tata letak tombol-tombol pada papan
+            tombol. Tata letak QWERTY ini pertama kali digunakan pada sebuah
+            mesin tik buatan E. Remington pada tahun 1874.
+          </p>
+        </div>
+        <div class="grid-item-img">
+          <img
+            style="width: 200px"
+            src="assets/mmmooousse/Keyboard-KLOCKENBERG.jpg"
+            alt=""
+          />
+          <p style="font-style: italic;">KLOCKENBERG adalah keyboard QWERTY yang terpisah menjadi dua bagian. Fungsi utamanya adalah buat mengurangi beban otot penggunanya. Walaupun mirip sama keyboard QWERTY, jenis yang satu ini lebih tipis.</p>
+        </div>
+        <div class="grid-item-img">
+          <img
+            style="width: 200px"
+            src="assets/mmmooousse/Mengenal-Keyboard-DVORAK.jpg"
+            alt=""
+          />
+          <p style="font-style: italic;">Dvorak adalah sebuah tata letak papan ketik yang dipatenkan tahun 1936 oleh August Dvorak dan William Dealey. Meskipun gagal menggantikan tata letak QWERTY, Dvorak didukung oleh semua sistem operasi besar dengan menyertakan akses bagi pengguna tata letak papan ketik ini di samping tata letak QWERTY.</p>
+        </div>
+        <div class="grid-item-img">
+          <img
+            style="width: 200px"
+            src="assets/mmmooousse/one, two, tri..jpeg"
+            alt=""
+          />
+          <p style="font-style: italic;">Keyboard One-Handed adalah Ide pengetikan satu tangan adalah mengetik dengan menggunakan satu tangan saja (misalnya tangan kiri), atau sebagian besar menggunakan satu tangan.</p>
+        </div>
+        <div class="grid-item-img">
+          <img
+            style="width: 200px"
+            src="assets/mmmooousse/1000x450px_Are_Mechanical_Keyboards_Better_Gaming.avif"
+            alt=""
+          />
+          <p style="font-style: italic;">Keyboard Mekanikal adalah Berbeda dengan keyboard biasa yang menggunakan satu membran sebagai penyalur input, mechanical keyboard mengirimkan input pada komputer melalui switch di seluruh tombol keyboard sehingga output yang dihasilkan lebih cepat dan akurat.</p>
+        </div>
+      </div>
+    </div>
+    <script src="asset/splide/dist/js/splide.min.js"></script>
+    <script type="module">
+      new Splide(".splide-basic", {
+        perPage: 2,
+        rewind: true,
+      }).mount();
+    </script>
+  </body>
+</html>

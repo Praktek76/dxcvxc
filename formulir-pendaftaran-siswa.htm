@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        border: 2px solid;
+        border-radius: 10px;
+        background-color: rgb(201, 201, 201);
+        padding: 20px;
+      }
+      .input {
+        width: 100%;
+
+        padding: 5px;
+        margin: 3px;
+        border-radius: 5px;
+        border: none;
+      }
+      .input:hover,
+      .input:focus {
+        outline: cornflowerblue solid 2px;
+      }
+      body {
+        background-color: rgb(255, 57, 57);
+        padding: 20px;
+        border: 10px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FORMULIR PENDAFTARAN SEKOLAH</h1>
+    <form action="">
+      <table class="body">
+        <tr>
+          <td>nama:</td>
+          <td><input type="text" name="nama" /></td>
+        </tr>
+        <tr>
+          <td>tempat dan tanggal lahir:</td>
+          <td><input type="text" name="tempat" /> <input type="date" name="tanggalLahir" /></td>
+        </tr>
+        <tr>
+          <td>agama:</td>
+          <td>
+            <select name="agama">
+              <option>islam</option>
+              <option>kriten</option>
+              <option>hindu</option>
+              <option>budha</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>alamat:</td>
+          <td><textarea cols="30" name="alamat" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td>no telepon:</td>
+          <td><input type="number" name="noTelepon" /></td>
+        </tr>
+        <tr>
+          <td>jenis kelamin:</td>
+          <td><input type="radio" value="laki-laki" name="jenisKelamin" />♂️ laki-laki</td>
+          <td><input type="radio" value="perempuan" name="jenisKelamin" />♀️ perempuan</td>
+        </tr>
+        <tr>
+          <td>hobi:</td>
+          <td><input type="checkbox" name="hobi" />membaca</td>
+          <td><input type="checkbox" name="hobi" />tidur</td>
+          <td><input type="checkbox" name="hobi" />olahraga</td>
+        </tr>
+        <tr>
+          <td>sekolah terakhir di:</td>
+          <td><input type="text" name="sekolahTerakhir" /></td>
+        </tr>
+        <tr>
+          <td>kelas:</td>
+          <td><input type="number" name="kelas" /></td>
+        </tr>
+        <tr>
+          <td>nama ortu:</td>
+          <td><input type="text" name="namaOrtu" /></td>
+        </tr>
+        <tr>
+          <td>pekerjaan ortu:</td>
+          <td><input type="text" name="pekerjaanOrtu" /></td>
+        </tr>
+        <tr>
+          <td>e-mail:</td>
+          <td><textarea cols="21" rows="1" name="eMail">@gmail.com</textarea></td>
+        </tr>
+        <tr>
+          <td>foto:</td>
+          <td><input type="file" name="foto" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" style="margin: 20px;" onclick="getValueForm()">daftar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>nama:</td>
+          <td id="nama-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>tempat:</td>
+          <td id="tempat-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>tanggal lahir:</td>
+          <td id="tanggalLahir-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>agama:</td>
+          <td id="agama-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>alamat:</td>
+          <td id="alamat-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>no telepon:</td>
+          <td id="noTelepon-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>jenis kelamin:</td>
+          <td id="jenisKelamin-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>hobi:</td>
+          <td id="hobi-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>sekolah terakhir:</td>
+          <td id="sekolahTerakhir-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>kelas:</td>
+          <td id="kelas-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>nama ortu:</td>
+          <td id="namaOrtu-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>pekerjaan ortu:</td>
+          <td id="pekerjaanOrtu-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>e-mail:</td>
+          <td id="eMail-value"></td>
+          <br />
+        </tr>
+        <tr>
+          <td>foto:</td>
+          <td id="foto-value"></td>
+          <br />
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      function getValueForm() {
+        let nama = document.getElementsByName("nama")[0].value;
+        let tempat = document.getElementsByName("tempat")[0].value;
+        let tanggalLahir = document.getElementsByName("tanggalLahir")[0].value;
+        let agama = document.getElementsByName("agama")[0].value;
+        let alamat = document.getElementsByName("alamat")[0].value;
+        let noTelepon = document.getElementsByName("noTelepon")[0].value;
+        let jenisKelamin = document.getElementsByName("jenisKelamin")[0].value;
+        let hobi = document.getElementsByName("hobi")[0].value;
+        let sekolahTerakhir = document.getElementsByName("sekolahTerakhir")[0].value;
+        let kelas = document.getElementsByName("kelas")[0].value;
+        let namaOrtu = document.getElementsByName("namaOrtu")[0].value;
+        let pekerjaanOrtu = document.getElementsByName("pekerjaanOrtu")[0].value;
+        let eMail = document.getElementsByName("eMail")[0].value;
+        let foto = document.getElementsByName("foto")[0].value;
+
+        document.getElementById("nama-value").innerHTML = nama;
+        document.getElementById("tempat-value").innerHTML = tempat;
+        document.getElementById("tanggalLahir-value").innerHTML = tanggalLahir;
+        document.getElementById("agama-value").innerHTML = agama;
+        document.getElementById("alamat-value").innerHTML = alamat;
+        document.getElementById("noTelepon-value").innerHTML = noTelepon;
+        document.getElementById("jenisKelamin-value").innerHTML = jenisKelamin;
+        document.getElementById("hobi-value").innerHTML = hobi;
+        document.getElementById("sekolahTerakhir-value").innerHTML = sekolahTerakhir;
+        document.getElementById("kelas-value").innerHTML = kelas;
+        document.getElementById("namaOrtu-value").innerHTML = namaOrtu;
+        document.getElementById("pekerjaanOrtu-value").innerHTML = pekerjaanOrtu;
+        document.getElementById("eMail-value").innerHTML = eMail;
+        document.getElementById("foto-value").innerHTML = foto;
+      }
+    </script>
+  </body>
+</html>

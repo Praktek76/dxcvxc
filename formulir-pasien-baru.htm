@@ -1,0 +1,127 @@
+<!-- nama, tanggal lahir, agama, alamat, no telep, keluhan, riwayat penyakit dahulu, hasil pemeriksaan lab/foto rontgen -->
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran pasien baru</title>
+    <style>
+      .table {
+        background-color: rgb(212, 212, 212);
+        border: 1px solid;
+        border-radius: 10px;
+        width: 600px;
+        height: auto;
+      }
+      .input {
+        width: 500px;
+        padding: 5px;
+        margin: 3px;
+        border-radius: 5px;
+        border: none;
+      }
+      .input:hover,
+      .input:focus {
+        outline: cornflowerblue solid 2px;
+      }
+      .text{
+        padding-left: 20px;
+        font-style: oblique;
+      }
+      body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin: 20px;">Pendaftaran Pasien Baru</h1>
+      <form style="margin: 20px" action="">
+        <div style="display: flex;">
+          <div class="table">
+            <div style="padding: 20px">
+              <label for="">Nama: </label>
+              <span><input type="text" class="input" name="Nama"></span>
+            </div>
+            <div style="padding: 20px;">
+              <label for="">Tanggal lahir: </label>
+              <span><input type="date" class="input" name="TanggalLahir"></span>
+            </div>
+            <div style="padding: 20px;">
+              <span>Agama: </span><br>
+              <span><input type="text" class="input" name="Agama"></span>
+            </div>
+            <div style="padding: 20px;">
+              <span>Alamat: </span><br>
+              <span><textarea name="Alamat" class="input" cols="30" rows="10"></textarea></span>
+            </div>
+            <div style="padding: 20px">
+              <span>No telepon: </span><br>
+              <span><input type="number" class="input" name="NoTelep"></span>
+            </div>
+            <div style="padding: 20px;">
+              <span>Pemeriksaan: </span><br>
+              <span><input type="checkbox" value="Penyakit Dalam," name="pemeriksaan">Penyakit dalam</span>
+              <span><input type="checkbox" value="Umum," name="pemeriksaan">Umum</span>
+              <span><input type="checkbox" value="Gigi" name="pemeriksaan">Gigi</span>
+            </div>
+            <div style="padding: 20px">
+                <span>Keluhan: </span><br>
+              <span><input type="text" class="input" name="Keluhan"></span>
+            </div>
+            <div style="padding: 20px;">
+                <span>Riwayat Penyaki Dahulu: </span><br>
+              <span><textarea name="RPD" class="input" cols="30" rows="10"></textarea></span>
+            </div>
+            <div style="padding: 20px;">
+                <span>Hasil pemeriksaan lab / foto rontgen: </span><br>
+              <span><input type="file" class="input" name="HPL"><span style="font-style: italic;"><br>* harap foto juga diberi nama </span></span>
+            </div>
+            <div>
+                <button style="margin: 20px" type="button" onclick="getValueForm()">Daftar</button>
+                <div style="margin: 20px">
+                    <h4>⬇️⬇️pendaftaran⬇️⬇️</h4>
+                    <span>Nama: </span><span id="Nama-value"></span><br>
+                    <span>Tanggal Lahir: </span><span id="TanggalLahir-value"></span><br>
+                    <span>Agama: </span><span id="Agama-value"></span><br>
+                    <span>Alamat: </span><span id="Alamat-value"></span><br>
+                    <span>No Telepon: </span><span id="NoTelep-value"></span><br>
+                    <span>Pemeriksaan: </span><span id="pemeriksaan-value0"></span> <span id="pemeriksaan-value1"></span> <span id="pemeriksaan-value2"></span><br>
+                    <span>Keluhan: </span><span id="Keluhan-value"></span><br>
+                    <span>Riwayat Penyakit Dahulu: </span><span id="RPD-value"></span><br>
+                    <span>Hasil pemeriksaan lab / foto rontgen: </span><span id="HPL-value"></span><br>
+                </div>
+            </div>
+        </div>
+      </form>
+ 
+    <script>
+      function getValueForm() {
+        let Nama = document.getElementsByName('Nama')[0].value;
+        let TanggalLahir = document.getElementsByName('TanggalLahir')[0].value;
+        let Agama = document.getElementsByName('Agama')[0].value;
+        let Alamat = document.getElementsByName('Alamat')[0].value;
+        let NoTelep = document.getElementsByName('NoTelep')[0].value;
+        let Keluhan = document.getElementsByName('Keluhan')[0].value;
+        let pemeriksaan0 = document.getElementsByName('pemeriksaan')[0].value;
+        let pemeriksaan1 = document.getElementsByName('pemeriksaan')[1].value;
+        let pemeriksaan2 = document.getElementsByName('pemeriksaan')[2].value;
+        let RPD = document.getElementsByName('RPD')[0].value;
+        let HPL = document.getElementsByName('HPL')[0].value;
+
+        document.getElementById('Nama-value').innerHTML = Nama;
+        document.getElementById('TanggalLahir-value').innerHTML = TanggalLahir;
+        document.getElementById('Agama-value').innerHTML = Agama;
+        document.getElementById('Alamat-value').innerHTML = Alamat;
+        document.getElementById('NoTelep-value').innerHTML = NoTelep;
+        document.getElementById('Keluhan-value').innerHTML = Keluhan;
+        document.getElementById('pemeriksaan-value0').innerHTML = pemeriksaan0;
+        document.getElementById('pemeriksaan-value1').innerHTML = pemeriksaan1;
+        document.getElementById('pemeriksaan-value2').innerHTML = pemeriksaan2;
+        document.getElementById('RPD-value').innerHTML = RPD;
+        document.getElementById('HPL-value').innerHTML = HPL;
+      }
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/FontAwesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/solid.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/brands.min.css" />
+    <link rel="stylesheet" href="asset/splide/dist/css/splide.min.css" />
+    <style>
+      .gradient-color {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(255, 0, 0),
+          rgb(255, 0, 0),
+          rgb(255, 255, 0),
+          rgb(0, 255, 0),
+          rgb(0, 255, 255),
+          rgb(0, 0, 255),
+          rgb(0, 0, 255)
+        );
+      }
+
+      .CImg-W100 {
+        width: 100%;
+        height: auto;
+      }
+
+      .CImg-H100 {
+        width: auto;
+        height: 100%;
+      }
+
+      .splide {
+        padding: 0 50px;
+      }
+
+      .my-slider-progress {
+        background: #ccc;
+      }
+
+      .my-slider-progress-bar {
+        background: greenyellow;
+        height: 2px;
+        transition: width 400ms ease;
+        width: 0;
+      }
+    </style>
+</head>
+<body>
+    <section
+      class="splide focus-center gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>focus center</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/benteng-belanda.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-borobudur.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/abstrak.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/heitayo.jpeg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-tikus.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/tentara.webp" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="asset/splide/dist/js/splide.min.js"></script>
+    <script type="module">
+      new Splide(".focus-center", {
+        type: "loop",
+        // height: "20rem",
+        perPage: 3,
+        focus: "center",
+        gap: 25,
+        padding: "3rem",
+        // autoWidth: true,
+      }).mount();
+
+    </script>
+</body>
+</html>

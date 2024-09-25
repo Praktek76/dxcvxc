@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/FontAwesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/solid.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/brands.min.css" />
+    <link rel="stylesheet" href="asset/splide/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="asset/splide/dist/css/splide-extension-video.min.css">
+    <style>
+      .gradient-color {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(255, 0, 0),
+          rgb(255, 0, 0),
+          rgb(255, 255, 0),
+          rgb(0, 255, 0),
+          rgb(0, 255, 255),
+          rgb(0, 0, 255),
+          rgb(0, 0, 255)
+        );
+      }
+
+      .gradient-color2 {
+        background: linear-gradient(to bottom, #ff0000 0%, #ffffff 100%);
+      }
+
+      .CImg-W100 {
+        width: 100%;
+        height: auto;
+      }
+
+      .CImg-H100 {
+        width: auto;
+        height: 100%;
+      }
+
+      .splide {
+        padding: 0 50px;
+      }
+
+      .my-slider-progress {
+        background: #ccc;
+      }
+
+      .my-slider-progress-bar {
+        background: greenyellow;
+        height: 2px;
+        transition: width 400ms ease;
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <span><h1>Carousel splide family</h1></span>
+    </center>
+    <br /><br /><br />
+
+    <section
+      class="splide focus-center gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>focus center</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/benteng-belanda.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-borobudur.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/abstrak.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/heitayo.jpeg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-tikus.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/tentara.webp" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide vertikal gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        width: 260px;
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>Vertical</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="CImg-H100" src="asset/benteng-belanda.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-H100" src="asset/candi-borobudur.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-H100" src="assets/abstrak.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-H100" src="assets/heitayo.jpeg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-H100" src="asset/candi-tikus.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-H100" src="assets/tentara.webp" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide autoplay gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>Auto Play👍</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/benteng-belanda.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-borobudur.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/abstrak.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/heitayo.jpeg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-tikus.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/tentara.webp" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide focus-center2 gradient-color2"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 255, 0),
+          rgb(0, 0, 255)
+        );
+      "
+    >
+      <h2>Tempat Wisata Surabaya</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/tempat wisata/1483954612430-largejpg.jpg"
+            />
+            <span style="font-size: x-largezzzz">Museum 10 November</span>
+            <p style="font-style: italic">
+              Museum Sepuluh Nopember merupakan museum khusus yang didirikan
+              pada 10 November 1991 untuk mengenang keberanian masyarakat
+              Surabaya dalam pertempuran 10 November 1945.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/tempat wisata/museum-nahdlatul-ulama.jpg"
+            />
+            <span style="font-size: x-large">Museum Nahdlatul Ulama</span>
+            <p style="font-style: italic">
+              Museum Nahdlatul Ulama adalah museum khusus yang memberikan
+              informasi tentang sejarah Nahdlatul Ulama dan perkembangannya.
+              Pembukaan Museum Nahdlatul Ulama dilakan pada tanggal 25 November
+              2004 oleh Abdurrahman Wahid.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/tempat wisata/mesjid-ampel.jpg"
+            />
+            <span style="font-size: x-large">Masjid Ampel</span>
+            <p style="font-style: italic">
+              Masjid Agung Ampel adalah sebuah masjid kuno yang terletak di Desa
+              Ampel, Kecamatan Semampir, Kota Surabaya, Provinsi Jawa Timur.
+              Masjid ini didirikan pada tahun 1421 oleh Sunan Ampel yang di
+              dekatnya terdapat Kompleks Pemakaman Sunan Ampel.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/tempat wisata/koleksi-dari-batu.jpg"
+            />
+            <span style="font-size: x-large">Museum Mpu Tantular</span>
+            <p style="font-style: italic">
+              Museum Negeri Mpu Tantular adalah sebuah museum negeri yang
+              berlokasi di kecamatan Buduran, Sidoarjo, Jawa Timur. Awalnya,
+              museum ini bernama Stedelijk Historisch Museum Soerabaia,
+              didirikan oleh Godfried von Faber pada tahun 1933 dan diresmikan
+              pada tanggal 25 Juli 1937.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/tempat wisata/tugu-pahlawan.jpg"
+            />
+            <span style="font-size: x-large">Tugu Pahlawan</span>
+            <p style="font-style: italic">
+              Museum Sepuluh Nopember adalah sebuah museum yang terletak di Kota
+              Surabaya. Pendirian Museum Sepuluh Nopember pada tanggal 10
+              November 1991 dengan tujuan untuk memperingati Pertempuran
+              Surabaya. Pembukaan Museum Sepuluh Nopember dimulai pada tanggal
+              10 November 1998 dan diresmikan pada tanggal 19 Februari 2000.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img
+              class="CImg-W100"
+              src="assets/tempat wisata/most-visit-in-town.jpg"
+            />
+            <span style="font-size: x-large">Monumen Kapal Selam</span>
+            <p style="font-style: italic">
+              Monumen Kapal Selam, atau disingkat Monkasel, adalah sebuah museum
+              kapal selam yang terdapat di Embong Kaliasin, Genteng, Surabaya.
+              Terletak 333 di pusat kota yaitu di Jalan Pemuda, tepat di sebelah
+              Plaza Surabaya, dan terdapat pintu akses untuk mengakses mal dari
+              dalam monumen.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide splide-auto gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>Auto Scroll</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="CImg-H100" src="assets/headset/Free-Shipping-Stereo-Headphone-G9000-Max-PS4-Gamer-Headset-Gaming-Vr-Headsets-Pink-Computer-Headphones-with-Mic-for-PS5-PC-xBox.webp" />
+          </li>
+          <li class="splide__slide">
+            slide2
+          </li>
+          <li class="splide__slide">
+            slide3
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-H100" src="assets/headset/Jete-Headset-Gaming-GA5-2.jpg" />
+          </li>
+          <li class="splide__slide">
+            slide5
+          </li>
+          <li class="splide__slide">
+            slide6
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide splide-video gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>video scroll</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+         
+          <li class="splide__slide" data-splide-html-video="assets/angrybird.mp4">
+            <img src="assets/abstrak.jpg" alt="">
+          </li>
+          <li 
+          class="splide__slide"
+          data-splide-youtube="https://www.youtube.com/watch?v=BXgLQRSnMwc">
+            <img src="assets/headset/51937_L_1.jpg" alt="">
+          </li>
+          <li 
+          class="splide__slide"
+          data-splide-youtube="https://www.youtube.com/watch?v=-K9u-KsqcsA">
+            <img src="assets/mmmooousse/Mengenal-Keyboard-DVORAK.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide focus-center-responsive gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>focus center responsive</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/benteng-belanda.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-borobudur.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/abstrak.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/heitayo.jpeg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-tikus.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/tentara.webp" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <script src="asset/splide/dist/js/splide.min.js"></script>
+    <script src="asset/splide/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="asset/splide/dist/js/splide-extension-video.min.js"></script>
+    <script type="module">
+      new Splide(".focus-center", {
+        type: "loop",
+        // height: "20rem",
+        perPage: 3,
+        focus: "center",
+        gap: 25,
+        padding: "3rem",
+        // autoWidth: true,
+      }).mount();
+
+      new Splide(".focus-center2", {
+        type: "loop",
+        // height: "20rem",
+        perPage: 3,
+        focus: "center",
+        gap: 25,
+        padding: "3rem",
+        // autoWidth: true,
+      }).mount();
+
+      new Splide(".vertikal", {
+        direction: "ttb",
+        height: "10rem",
+      }).mount();
+
+      new Splide(".autoplay", {
+        type: "loop",
+        perPage: 3,
+        autoplay: true,
+      }).mount();
+
+      new Splide(".splide-auto", {
+        type: "loop",
+        height: "20rem",
+        perPage: 2,
+        focus: "center",
+        gap: 25,
+        darg: 'free',
+        autoScroll: {
+          speed: 1,
+        }
+      }).mount(window.splide.Extensions);
+
+      new Splide(".splide-video", {
+        type: "loop",
+        height: "30rem",
+        gap: 25,
+        gap: '1rem',
+        perPage: 3,
+        autoScroll: {
+          autoStart: false
+        },
+        video: {
+          cover: true,
+          loop: true,
+          mute: true,
+        },
+        breakpoints: {
+          1200: {perPage: 2, gap: '1rem'},
+          600: {perPage: 1, gap: 0}
+        }
+      }).mount(window.splide.Extensions);
+
+      new Splide(".focus-center-responsive", {
+        type: "loop",
+        height: "15rem",
+        perPage: 3,
+        gap: '1rem',
+        // autoWidth: true,
+        breakpoints: {
+          1200: {perPage: 2, gap: '1rem'},
+          600: {perPage: 1, gap: 0}
+        }
+      }).mount();
+
+
+    </script>
+  </body>
+</html>

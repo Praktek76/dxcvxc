@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/FontAwesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/solid.min.css" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/brands.min.css" />
+    <link rel="stylesheet" href="asset/splide/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="asset/splide/dist/css/splide-extension-video.min.css">
+    <style>
+      .gradient-color {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(255, 0, 0),
+          rgb(255, 0, 0),
+          rgb(255, 255, 0),
+          rgb(0, 255, 0),
+          rgb(0, 255, 255),
+          rgb(0, 0, 255),
+          rgb(0, 0, 255)
+        );
+      }
+
+      .gradient-color2 {
+        background: linear-gradient(to bottom, #ff0000 0%, #ffffff 100%);
+      }
+
+      .CImg-W100 {
+        width: 100%;
+        height: auto;
+      }
+
+      .CImg-H100 {
+        width: auto;
+        height: 100%;
+      }
+
+      .splide {
+        padding: 0 50px;
+      }
+
+      .my-slider-progress {
+        background: #ccc;
+      }
+
+      .my-slider-progress-bar {
+        background: greenyellow;
+        height: 2px;
+        transition: width 400ms ease;
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="splide splide-auto gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>Auto Scroll</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            slide1
+          </li>
+          <li class="splide__slide">
+            slide2
+          </li>
+          <li class="splide__slide">
+            slide3
+          </li>
+          <li class="splide__slide">
+            slide4
+          </li>
+          <li class="splide__slide">
+            slide5
+          </li>
+          <li class="splide__slide">
+            slide6
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide splide-video gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>video</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li 
+          class="splide__slide"
+          data-splide-youtube="https://www.youtube.com/watch?v=BXgLQRSnMwc">
+            <img src="assets/mmmooousse/hojoooooo.jpg" alt="">
+          </li>
+          <li 
+          class="splide__slide"
+          data-splide-youtube="https://www.youtube.com/watch?v=lIsuYhzL6oY">
+            <img src="assets/mmmooousse/hojoooooo.jpg" alt="">
+          </li>
+          <li 
+          class="splide__slide"
+          data-splide-youtube="https://www.youtube.com/watch?v=9l-9_Mt2m4w">
+            <img src="assets/mmmooousse/hojoooooo.jpg" alt="">
+          </li>
+      </div>
+    </section>
+    <br />
+
+    <section
+      class="splide focus-center-responsive gradient-color"
+      aria-label="Splide Basic HTML Example"
+      style="
+        border: 5px solid;
+        border-image: linear-gradient(
+          to bottom right,
+          rgb(0, 0, 255),
+          rgb(0, 0, 255),
+          rgb(0, 255, 255),
+          rgb(0, 255, 0),
+          rgb(255, 255, 0),
+          rgb(255, 0, 0),
+          rgb(255, 0, 0)
+        );
+      "
+    >
+      <h2>focus center responsive</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/benteng-belanda.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-borobudur.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/abstrak.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/heitayo.jpeg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="asset/candi-tikus.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img class="CImg-W100" src="assets/tentara.webp" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <script src="asset/splide/dist/js/splide.min.js"></script>
+    <script src="asset/splide/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="asset/splide/dist/js/splide-extension-video.min.js"></script>
+    <script type="module">
+      new Splide(".splide-auto", {
+        type: "loop",
+        height: "20rem",
+        perPage: 2,
+        focus: "center",
+        gap: 25,
+        darg: 'free',
+        autoScroll: {
+          speed: 1,
+        }
+      }).mount(window.splide.Extensions);
+
+      new Splide(".splide-video", {
+        type: "loop",
+        height: "30rem",
+        gap: '1rem',
+        video: {
+          mute:true,
+          cover: true,
+          loop: true,
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide(".focus-center-responsive", {
+        type: "loop",
+        height: "15rem",
+        perPage: 3,
+        gap: '1rem',
+        // autoWidth: true,
+        breakpoints: {
+          1200: {perPage: 2, gap: '1rem'},
+          600: {perPage: 1, gap: 0}
+        }
+      }).mount();
+
+
+    </script>
+  </body>
+</html>
