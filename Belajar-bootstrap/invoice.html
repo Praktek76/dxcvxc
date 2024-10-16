@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>INVOICE</title>
     <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../asset/png-clipart-invoice-computer-icons-tax-finance-bank-text-logo-removebg-preview.png"
+    />
     <style>
       .border {
         border: 2px solid;
@@ -18,6 +23,18 @@
         font-weight: bolder;
       }
 
+      @media screen and (min-width: 552px) {
+        .text-tengah{
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 620px) {
+        .text-kiri{
+          text-align: left;
+        }
+      }
+
       body {
         padding: 20px;
       }
@@ -25,7 +42,7 @@
   </head>
   <body>
     <img
-      style="float: right; width: 150px;"
+      style="float: right; width: 150px"
       class="text-end"
       src="../asset/png-clipart-invoice-computer-icons-tax-finance-bank-text-logo-removebg-preview.png"
       alt=""
@@ -40,63 +57,63 @@
     <br />
     <table class="table border">
       <thead>
-        <tr class="text-center">
-          <th scope="col" class="border text-bg-secondary p-4">no</th>
-          <th scope="col" class="border text-bg-secondary p-4">product</th>
-          <th scope="col" class="border text-bg-secondary p-4">qty</th>
-          <th scope="col" class="border text-bg-secondary p-4">price</th>
-          <th scope="col" class="border text-bg-secondary p-4">tolat</th>
+        <tr>
+          <th scope="col" class="border text-bg-secondary p-4">No</th>
+          <th scope="col" class="border text-bg-secondary p-4">Product</th>
+          <th scope="col" class="border text-bg-secondary p-4">QTY</th>
+          <th scope="col" class="border text-bg-secondary p-4">Price</th>
+          <th scope="col" class="border text-bg-secondary p-4">Totalt</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="text-center">
-          <th class="col-1 border">1</th>
-          <td class="col-3 border">semen</td>
-          <td class="col-1 border">1</td>
-          <td class="col-3 border">$63</td>
-          <td class="col-3 border">$63</td>
+        <tr>
+          <th class="col-1 border text-center">1</th>
+          <td class="col-3 border text-tengah">Semen</td>
+          <td class="col-1 border text-center">1</td>
+          <td class="col-3 border text-tengah">$63</td>
+          <td class="col-3 border text-tengah">$63</td>
         </tr>
-        <tr class="text-center">
-          <th class="col-1 border">2</th>
-          <td class="col-3 border">paku</td>
-          <td class="col-1 border">1</td>
-          <td class="col-3 border">$38</td>
-          <td class="col-3 border">$38</td>
+        <tr>
+          <th class="col-1 border text-center">2</th>
+          <td class="col-3 border text-tengah">Paku</td>
+          <td class="col-1 border text-center">1</td>
+          <td class="col-3 border text-tengah">$38</td>
+          <td class="col-3 border text-tengah">$38</td>
         </tr>
-        <tr class="text-center">
-          <th class="col-1 border">3</th>
-          <td class="col-3 border">keramik</td>
-          <td class="col-1 border">3</td>
-          <td class="col-3 border">$46</td>
-          <td class="col-3 border">$138</td>
+        <tr>
+          <th class="col-1 border text-center">3</th>
+          <td class="col-3 border text-tengah">Keramik</td>
+          <td class="col-1 border text-center">3</td>
+          <td class="col-3 border text-tengah">$46</td>
+          <td class="col-3 border text-tengah">$138</td>
         </tr>
-        <tr class="text-center">
-          <th class="col-1 border">4</th>
-          <td class="col-3 border">cat</td>
-          <td class="col-1 border">1</td>
-          <td class="col-3 border">$43</td>
-          <td class="col-3 border">$43</td>
+        <tr>
+          <th class="col-1 border text-center">4</th>
+          <td class="col-3 border text-tengah">Cat</td>
+          <td class="col-1 border text-center">1</td>
+          <td class="col-3 border text-tengah">$43</td>
+          <td class="col-3 border text-tengah">$43</td>
         </tr>
-        <tr class="text-center">
-          <th class="col-1 border">5</th>
-          <td class="col-3 border">kuas</td>
-          <td class="col-1 border">2</td>
-          <td class="col-3 border">$8</td>
-          <td class="col-3 border">$16</td>
+        <tr>
+          <th class="col-1 border text-center">5</th>
+          <td class="col-3 border text-tengah">Kuas</td>
+          <td class="col-1 border text-center">2</td>
+          <td class="col-3 border text-tengah">$8</td>
+          <td class="col-3 border text-tengah">$16</td>
         </tr>
-        <tr class="text-center">
-          <th class="col-1 border">6</th>
-          <td class="col-3 border">semen</td>
-          <td class="col-1 border">1</td>
-          <td class="col-3 border">$55</td>
-          <td class="col-3 border">$55</td>
+        <tr>
+          <th class="col-1 border text-center">6</th>
+          <td class="col-3 border text-tengah">Makanan + Minuman</td>
+          <td class="col-1 border text-center">1</td>
+          <td class="col-3 border text-tengah text-tengah">$55</td>
+          <td class="col-3 border text-tengah">$55</td>
         </tr>
-        <tr class="text-center">
+        <tr>
           <th class="col-1"></th>
-          <td class="col-3 tebal">Total     =</td>
+          <td class="col-3 tebal">Total =</td>
           <td class="col-1"></td>
-          <td class="col-3 tebal border">$253</td>
-          <td class="col-3 tebal">$353</td>
+          <td class="col-3 tebal border text-tengah">$253</td>
+          <td class="col-3 tebal text-tengah">$353</td>
         </tr>
       </tbody>
     </table>
