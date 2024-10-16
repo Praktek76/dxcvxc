@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
 
     <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="mysass.scss" />
 
     <style>
+      @media (min-width: 576px) {
+        .tebal {
+          font-weight: bolder;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .bawah {
+          text-decoration: underline;
+        }
+      }
+
       body {
         padding: 50px;
       }
     </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1 class="text-primary-emphasis text-bg-dark tebal bawah">
+      Hello, world!
+    </h1>
 
     <div class="form-floating">
       <textarea
@@ -34,6 +49,27 @@
     <button type="button" class="btn btn-dark">Dark</button>
 
     <button type="button" class="btn btn-link">Link</button>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ea
+          ad magni magnam ullam eius. Ut vitae nam deserunt sint neque sed,
+          incidunt expedita quae omnis quas, suscipit id culpa.
+        </div>
+        <div class="col text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ea
+          ad magni magnam ullam eius. Ut vitae nam deserunt sint neque sed,
+          incidunt expedita quae omnis quas, suscipit id culpa.
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus et, sit quos eius incidunt, iste optio distinctio
+          voluptatibus quod voluptate ratione natus accusamus rem adipisci quis
+          nesciunt quae alias placeat.
+        </div>
+      </div>
+    </div>
 
     <script src="bootstrap.bundle.min.js"></script>
   </body>
