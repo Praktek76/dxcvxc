@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      .Widht {
+        width: 300px;
+      }
+
+      .carousel-autoplaying {
+        width: 500px;
+        border: 3px solid;
+      }
+
+      body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Peringatan.</strong> Masih dalam percobaan
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <br />
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Jerapah
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <img
+              src="../asset/Folder Baru/jrp.jpg"
+              class="card-img-top Widht"
+              alt="..."
+            />
+            <br />
+            <strong
+              >Jerapah adalah mamalia berkuku besar Afrika yang termasuk dalam
+              genus Giraffa.</strong
+            >
+            Ini adalah hewan darat tertinggi yang masih hidup dan pemamah biak
+            terbesar di Bumi. Secara tradisional, jerapah dianggap sebagai satu
+            spesies, Giraffa camelopardalis, dengan sembilan subspesies.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Gajah
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <img
+              src="../asset/Folder Baru/images (1).jpg"
+              class="card-img-top Widht"
+              alt="..."
+            />
+            <br />
+            <strong
+              >Gajah, liman, atau biram adalah mamalia besar dari famili
+              Elephantidae dan ordo Proboscidea.</strong
+            >
+            Secara tradisional, terdapat dua spesies yang diakui, yaitu gajah
+            afrika dan gajah asia, walaupun beberapa bukti menunjukkan bahwa
+            gajah semak afrika dan gajah hutan afrika adalah spesies yang
+            berbeda.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Hiu
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <img
+              src="../asset/Folder Baru/039134600_1698748329-hiu_putih_besar.webp"
+              class="card-img-top Widht"
+              alt="..."
+            />
+            <br />
+            <strong
+              >Hiu atau cucut adalah sekelompok ikan dengan kerangka tulang
+              rawan yang lengkap, dan tubuh yang kokoh.</strong
+            >
+            Mereka bernapas dengan menggunakan lima hingga tujuh liang insang.
+            Letak insang tersebut ada di samping, atau dimulai sedikit di
+            belakang, kepalanya.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- carousel autoplaying -->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-autoplaying">
+          <img
+            src="../asset/Folder Baru/jrp.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item carousel-autoplaying">
+          <img
+            src="../asset/Folder Baru/images (1).jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item carousel-autoplaying">
+          <img
+            src="../asset/Folder Baru/039134600_1698748329-hiu_putih_besar.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span aria-hidden="true" style="color: black; font-weight: bolder"
+          >Previous</span
+        >
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span aria-hidden="true" style="color: black; font-weight: bolder"
+          >Next</span
+        >
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+
+    <!-- collapse -->
+
+    <p>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample"
+        aria-expanded="false"
+        aria-controls="collapseWidthExample"
+      >
+        Tekan
+      </button>
+    </p>
+    <div style="min-height: 120px">
+      <div class="collapse collapse-horizontal" id="collapseWidthExample">
+        <div class="card card-body" style="width: 300px">
+          ini hanyalah percobaan
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Fakta
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Fakta</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">90 + 6 = 99</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="progress"
+      role="progressbar"
+      aria-label="Animated striped example"
+      aria-valuenow="75"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    >
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        style="width: 75%"
+      ></div>
+    </div>
+
+    <div class="spinner-border m-5" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
