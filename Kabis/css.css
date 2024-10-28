@@ -8,5 +8,27 @@
     color: black;
 }
 .jarak-atas{
-    padding-top: 10px;
+    padding-top: 20px;
+}
+.jarak-bawah{
+    padding-bottom: 20px;
+}
+.ukuran-100px{
+    height: 100px;
+}
+.latar-hitam{
+    color: white;
+    background-color: black;
+}
+.latar-putih{
+    color: black;
+    background-color: white;
+}
+.latar-hitam:hover{
+    color: black;
+    background-color: white;
+}
+.latar-putih:hover{
+    color: white;
+    background-color: black;
 }
