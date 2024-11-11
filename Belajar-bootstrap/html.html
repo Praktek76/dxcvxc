@@ -302,7 +302,6 @@
         aria-atomic="true"
       >
         <div class="toast-header">
-          
           <strong class="me-auto">Bootstrap</strong>
           <small>11 mins ago</small>
           <button
@@ -329,8 +328,12 @@
         });
       }
 
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
     </script>
   </body>
 </html>
